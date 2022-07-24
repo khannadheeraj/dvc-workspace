@@ -36,6 +36,7 @@ def train_and_evaluate(config_path):
 
     train = pd.read_csv(train_data_path, sep=",")
     test = pd.read_csv(test_data_path, sep=",")
+    print(train.head())
 
     train_y = train[target]
     test_y = test[target]
